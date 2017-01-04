@@ -11,8 +11,9 @@
 #Graphs<br/>
 <ul>
 <li>BFS
-	<ul><li><a  target="_blank" href="https://raw.githubusercontent.com/rvbugs0/Data-structures-and-algorithms/master/graphs/connected-components-in-undirected-graphs/ConnectedComponentsInUndirectedGraphs.java">Connected components in an undirected graph</li></ul>
-
+	<ul><li><a  target="_blank" href="https://raw.githubusercontent.com/rvbugs0/Data-structures-and-algorithms/master/graphs/connected-components-in-undirected-graphs/ConnectedComponentsInUndirectedGraphs.java">Connected components in an undirected graph using BFS</li></ul>
+<li>DFS
+	<ul><li><a  target="_blank" href="https://raw.githubusercontent.com/rvbugs0/Data-structures-and-algorithms/master/graphs/connected-components-in-undirected-graphs/ConnectedComponentsDFS.java">Connected components in an undirected graph using DFS</li></ul>
 </ul>
 
 
