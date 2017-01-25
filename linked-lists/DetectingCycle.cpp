@@ -9,6 +9,9 @@ typedef struct node
 int hasCycle(node* head);
 int main()
 {
+	//		  -----3 
+	// 1-----2	   \
+	//		\___4__/
 	node one,two,three,four;
 	one.data = 1;
 	one.next = &two;
@@ -18,9 +21,10 @@ int main()
 	three.next=&four;
 	four.data = 4;
 	four.next=&two;
-	if(hasCycle(&one))
+	int z;
+	if(z=hasCycle(&one))
 	{
-		cout<<"cycle found\n";
+		cout<<"cycle found, starts at "<<z<<"\n";
 	}
 	else
 	{
@@ -32,12 +36,29 @@ int main()
 
 int hasCycle(node* head)
 {
+	int cycleExists =0; 
 	node *slowPtr=head,*fastPtr=head;
 	while(slowPtr && fastPtr && fastPtr->next)
 	{
 		slowPtr = slowPtr->next;
 		fastPtr = fastPtr->next->next;
-		if(slowPtr==fastPtr) return 1;
+		if(slowPtr==fastPtr) 
+			{
+				cycleExists=1;
+				break;	
+			}
+	}
+	if(cycleExists)
+	{
+		slowPtr=head;
+		while(slowPtr!=fastPtr)
+		{
+			fastPtr=fastPtr->next;
+			slowPtr=slowPtr->next;
+		}
+		return slowPtr->data;
 	}
 	return 0;
+
+
 }
