@@ -15,6 +15,12 @@
 </li> 
 </ul>
 
+#Linked Lists<br/>
+<li><a target="_blank" href="https://raw.githubusercontent.com/rvbugs0/Data-structures-and-algorithms/master/linked-lists/DetectingCycle.cpp">
+	Detecting Cycle</a>
+</li>
+
+
 #Stack<br/>
 <li><a target="_blank" href="https://raw.githubusercontent.com/rvbugs0/Data-structures-and-algorithms/master/stack/BalancingBrackets.cpp">
 	Balancing Brackets</a>
