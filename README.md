@@ -1,5 +1,13 @@
 # Data-structures-and-algorithms
 
+
+#Closest pair problem
+<ul>
+	<li><a target="_blank" href="https://raw.githubusercontent.com/rvbugs0/Data-structures-and-algorithms/master/sorts/applications/ClosestPair.cpp">Closest Pair Problem</a>
+	</li>
+</ul>
+
+
 #Sorts<br/>
 <ul>
 <li><a target="_blank" href="https://raw.githubusercontent.com/rvbugs0/Data-structures-and-algorithms/master/sorts/QuickSort.java">
