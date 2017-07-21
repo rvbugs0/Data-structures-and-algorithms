@@ -41,6 +41,9 @@
 <li><a target="_blank" href="https://raw.githubusercontent.com/rvbugs0/Data-structures-and-algorithms/master/trees/TreeTraversal.cpp">
 	Tree Traversal</a>
 </li>
+<li><a target="_blank" href="https://raw.githubusercontent.com/rvbugs0/Data-structures-and-algorithms/master/trees/BinarySearchTree.java">
+	Binary Search Tree</a>
+</li>
 
 #Graphs<br/>
 <ul>
