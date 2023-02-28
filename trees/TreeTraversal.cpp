@@ -18,7 +18,7 @@ class Node
 void inOrderTraveral(Node *head);
 void preOrderTraveral(Node *head);
 void levelOrderTraversal(Node *head);
-
+void postOrderNonRecrusive(Node *head);
 int main()
 {
 
@@ -33,6 +33,7 @@ int main()
 	inOrderTraveral(&one);
 	preOrderTraveral(&one);
 	levelOrderTraversal(&one);
+	postOrderNonRecrusive(&one);
 	return 0;
 }
 
@@ -59,6 +60,43 @@ void inOrderTraveral(Node *head)
 		root = root->right;  
 	}
 	cout<<endl;
+}
+
+void postOrderNonRecrusive(Node *root){
+	cout<<"Post order non-recursive:\t";
+	Node *previous = NULL;
+	vector<Node*> stack;
+	stack.push_back(root);
+	while(stack.size()){
+		
+		//  top
+		Node* current = stack[stack.size()-1];
+		// stack.erase(stack.begin()+stack.size()-1);
+
+
+		if(!previous || previous->left==current || previous->right == current)
+		{
+			
+			if(current->left){
+				stack.push_back(current->left);
+			}
+			else if(current->right){
+				stack.push_back(current->right);
+			}
+		}else if(current->left==previous){
+			if(current->right){
+				stack.push_back(current->right);
+			}
+		}else{
+			cout<<current->data<<" ";
+			stack.erase(stack.begin()+stack.size()-1);
+		}
+		previous = current;
+
+	}
+	cout<<"\n";
+
+
 }
 
 
